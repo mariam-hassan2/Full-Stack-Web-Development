@@ -1,0 +1,73 @@
+:root {
+  --axis: #E5F4E3;
+  --marian-blue: #003F91;
+  --blue-50: #198eee;
+  --light-blue:#5DA9E9;
+  --pinky:	#FF00FF;
+  --violet:#ee82ee;
+  --lightPink:hsl(300, 100%, 78%);
+ --sky-blue: hsl(210, 70%, 75%);
+   --axis: #E5F4E3;
+  --dark-blue: #5DA9E9;
+  --marian-blue: #003F91;
+  --blue-50: #198eee;  
+}
+
+svg { 
+  background-color: var(--lightPink);
+  border-radius: 25px;
+}
+
+svg text { fill: var(--axis); }
+
+body {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: var(--axis);
+  background-color: var(--pinky);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {padding: 15px 15px;}
+h2 {padding: auto 15px;}
+
+.bar:nth-child(odd) { fill: var(--sky-blue); }
+
+.bar:nth-child(even) { fill: var(--light-blue); }
+
+.bar:hover { fill: var(--axis); }
+.chartTypeSelect{
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+#tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  padding: 2px;
+  font: 18px;
+  box-shadow: 1px 1px 10px;
+  border-radius: 2px;
+  pointer-events: none;
+  background: var(--pinky);
+
+}
+
+.info a:visited { fill: var(--axis); }
+
+.info a:hover { fill: var(--pinky); }
+
+.info a:active { fill: var(--pinky); }
+
