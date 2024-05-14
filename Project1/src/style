@@ -1,0 +1,7 @@
+body{
+  padding:2rem;
+  margin:2rem;
+}
+has-error{
+  border: 2px solid;  
+}
