@@ -1,0 +1,25 @@
+ <div id="container">
+
+<div class="row">
+ <div class="col-xs-12">
+<h1 class="text-center" id='title'>1 USD Exchange Rate Compared to Global Currencies </h1>
+
+<h2 class="text-center" id='description'> 1 USD = </h2>
+
+
+   </div>
+
+
+  <div class="col-xs-2">
+  <select class="form-control" style="color:black;" id="chartTypeSelect">
+    <option value="bar">Bar Chart</option>
+    <option value="line">Line Chart</option>
+    <option value="scatter">Scatter</option>
+  </select>
+   </div>
+  </div>
+   
+</div>
+
+
+
