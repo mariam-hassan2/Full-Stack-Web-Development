@@ -1,0 +1,176 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,inital-scale=1.0">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js'></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.4/toastr.min.js">
+    
+    
+
+    
+  </head>
+  <body>
+    <h3 style="color:red;">Bootstrap Booking Form:</h3>
+    <div>
+    <div class="well"> Fill out the form and click the submit button when complete... </div>
+    </div>
+      <div class="fluid-container">
+        <form>
+        <div class="row">
+          <div class = "col-md-6">
+            <div> 
+              <!-- start of user section-->
+                
+              <div class="panel panel-primary">
+                <div class="panel-heading">User:</div>
+                <div class="panel-body">
+                  <div class="form-group">
+                    <label class="control-label col-sm-2" for = "username">Username: </label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="username" placeholder="Type username..."> 
+                      </div>
+                  </div>
+                  <div class="form-group"> 
+                    <label class= "control-label col-sm-2 text-black" for="firstname">First Name: </label>
+                      <div class="col-sm-10">
+                        <input type="text" class="form-control" id="firstname" placeholder="Type first name...">
+                      </div>  
+                  </div>
+                  <div class="form-group"> 
+                    <label class="control-label col-sm-2 text-default" for="lastname">Last Name: </label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="lastname" placeholder="Type last name...">
+                    </div> 
+                  </div>                     
+                </div>
+               </div>            
+                  
+              <!-- end of user section-->
+              </div>
+             
+                  <!-- start of contact section-->
+              <div>
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">Contact:</div>
+                    <div class="panel-body">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                          <input id="phone" type="text" class="form-control" name="email" placeholder="Type phone#...">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-fax" aria-hidden="true"></i></span>
+                          <input id="fax" type="text" class="form-control" name="fax" placeholder="Type fax#...">
+                        </div>
+                        <div class="input-group">
+                          <span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                          <input id="email" type="text" class="form-control" name="email" placeholder="Type e-mail...">
+                       </div>   
+                      </div>
+                  </div>
+                </div>
+            <!-- end of contact section-->
+          </div>
+          
+          <div> 
+            <!-- start of schedule section-->
+            
+              <div class="panel panel-primary">
+                <div class="panel-heading">Schedule:</div>
+                  <div class="panel-body">
+                    <form class="form-Horizontal" id="form">
+         
+                      
+          
+                        <label for="adults">Adults:</label>
+                        <select class="form-control" id="adults">
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                        </select>  
+                     
+                  </form>
+                    
+                    
+                    <div class="form-group">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <label for="checkin">Check-In:</label>
+                            <input type="date" class="form-control" id="checkin" name="checkin">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="checkout">Check-Out:</label>
+                          <input type="date" class="form-control" id="checkout" name="checkout">
+                        </div>
+                      </div>
+                    <div class= "row">
+                      <div class="col-md-6">
+                        <label for="days">Days:</label>
+                        <input type="text" class="form-control" id="days" placeholder="Displays days..." name="days" readonly>
+                     </div>
+                     <div class="col-md-6">
+                       <label for="cost">Cost($):</label>
+                       <input type="text" class="form-control" id="cost" placeholder="Displays cost..." name="cost" readonly>
+                    </div>
+                 </div>
+           </div>
+         </div>
+      </div>
+      <!-- end of schedule section-->
+      </div>
+    </div>       
+     <!-- start of other section-->
+    <div class="col-md-6" style="border-primary border-blue;">
+        <div class="panel panel-primary">
+          <div class="panel-heading">Other:</div>
+            <div class="panel-body">
+			          <div class= "form-group">
+            	    <label for="comment">Message:</label>
+                    <textarea class="form-control" id ="message" rows=21></textarea>
+                 </div>
+ 			          <div class= "form-group">
+              	<label for = "vol">Range:</label>
+              	<input type="range" id="range" name="vol" min="0" max="10" step="1">
+                </div>
+ 			          <div class= "form-group">
+                  <label> Priority:</label>
+                  <br>
+                  <label class="radio-inline "> 
+                  <input type="radio" name="optradio" id ="low" value="low" checked>Low
+                  </label>
+                  <label class="radio-inline">
+                   <input type="radio" name="optradio" value="med">Med
+                  </label>
+                  <label class="radio-inline">
+                  <input type="radio" name="optradio" value="high">High
+                  </label>
+                </div>              
+            </div>
+        </div>
+    
+    </div>
+  </div>       
+ </form>        
+ 
+ 
+<div class="row">
+  <hr>
+
+    <button type="button" class="btn btn-success pull-right btn-lg" style="margin-left:15px;" id="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>Submit
+  </button>
+    <button type="button" class="btn btn-primary pull-right btn-lg" id = "reset"><i class="fa fa-eraser" aria-hidden="true"></i>Restart
+  </button>   
+    
+</div>   
+
+      
+
+        
+</div>
+
+</body>
+  
+  
